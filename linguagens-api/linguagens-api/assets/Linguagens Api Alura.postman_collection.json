@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "f3a55ed9-0956-43af-961c-7a89f945d9d6",
+		"name": "Linguagens Api Alura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26052850"
+	},
+	"item": [
+		{
+			"name": "Obter Lista de Linguagens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/linguagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Lista de Linguagens pelo Ranking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/linguagens/ranking/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens",
+						"ranking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Lista de Linguagens Pelo Nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/linguagens/title/java",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens",
+						"title",
+						"java"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Nova Linguagem de Programação",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"JavaScript\",\r\n    \"image\": \"https://raw.githubusercontent.com/abrahamcalf/programming-languages-logos/master/src/javascript/javascript_256x256.png\",\r\n    \"ranking\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/linguagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar a Linguagem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"643d7f4e1b0092696e488bdb\",\r\n    \"title\": \"JavaScript\",\r\n    \"image\": \"https://raw.githubusercontent.com/abrahamcalf/programming-languages-logos/master/src/javascript/javascript_256x256.png\",\r\n    \"ranking\":6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/linguagens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Linguagem Pelo Ranking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/linguagens/ranking/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens",
+						"ranking",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Linguagem Pelo Nome",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/linguagens/title/JavaScript",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"linguagens",
+						"title",
+						"JavaScript"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
